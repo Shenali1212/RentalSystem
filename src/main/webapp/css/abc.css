@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 101;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.top-logo img {
+    height: 50px; /* Adjust logo size */
+}
+
+.container {
+  display: flex;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.container {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: linear-gradient(180deg, #34495e, #2c3e50); /* Gradient for the sidebar */
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    transition: width 0.3s ease; /* Smooth transition for future collapsibility */
+}
+
+.sidebar h2 {
+    color: #ecf0f1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: all 0.4s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #16a085;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Hover effect with shadow */
+    transform: scale(1.05); /* Add a gentle scale */
+}
+
+/* Announcement Container */
+.announcement-container {
+	margin-left: 100px;
+    padding: 20px;
+    width: calc(100% - 270px);
+    margin: 100px auto;
+    max-width: 700px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-container h2 {
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    position: relative;
+}
+
+.announcement-container h2:after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: #E50914;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Form Styling */
+.announcement-form label {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.announcement-form input[type="text"],
+.announcement-form input[type="date"],
+.announcement-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.announcement-form input[type="text"]:focus,
+.announcement-form input[type="date"]:focus,
+.announcement-form textarea:focus {
+    border-color: #E50914;
+    outline: none;
+}
+
+/* Textarea Resizing */
+.announcement-form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+/* Submit Button */
+.announcement-form .btn-submit {
+    width: 100%;
+    background-color: blue; /* Default blue background */
+    color: white;
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.announcement-form .btn-submit:hover {
+    background-color: green; /* Changes to green on hover */
+    transform: scale(1.05); /* Slight scale-up effect on hover */
+}
+
+
+/* Footer Styling */
+.footer {
+    background-color: #1a1a1a;
+    padding: 30px 0;
+    color: #aaa;
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    padding: 10px 20px;
+    min-width: 250px;
+}
+
+.footer-left h3,
+.footer-center h3,
+.footer-right h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-left p,
+.footer-center p {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.footer-right .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #ddd;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #E50914;
+}

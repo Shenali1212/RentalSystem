@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Top Navigation Bar */
+.top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 101;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.top-logo img {
+    height: 50px; /* Adjust logo size */
+}
+
+/* Register Button on top bar */
+.top-right .btn {
+    text-decoration: none;
+    color: white;
+    background-color:  rgb(209, 31, 57);
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-left: 15px;
+    font-weight: 400;
+    transition: background-color 0.3s ease;
+}
+
+.top-right .btn:hover {
+     color: black;
+    background-color: rgb(217, 212, 212);
+}
+
+/* Main Navigation Bar (below top navigation bar) */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 15px 20px;
+    position: fixed;
+    top: 74px; /* Space for top navbar */
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height:50px;
+    width:100%;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    color: rgb(209, 31, 57);
+}
+
+
+.user-info {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    gap: 10px; /* Adds space between username and button */
+}
+
+.username {
+    font-size: 16px;
+}
+
+.Logout-btn {
+    padding: 8px 15px;
+    background-color:  rgb(209, 31, 57);
+    transition: background-color 0.3s ease;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.Logout-btn:hover {
+    color: black;
+    background-color: rgb(217, 212, 212);
+}
+
+
+/* Footer */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer-left, .footer-center, .footer-right {
+    margin: 10px;
+}
+
+/* Social Icons */
+.social-icons a {
+	color:rgb(209, 31, 57);
+    margin: 0 10px;
+}
+
+.social-icons img {
+    height: 30px;
+    width: 30px;
+    filter: invert(100%);
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+    background-color: rgb(217, 212, 212);
+}

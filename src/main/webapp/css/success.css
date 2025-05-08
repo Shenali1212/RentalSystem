@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+.success-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.success-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+.success-box h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #28a745; /* Green color for success */
+}
+
+.success-box p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Continue Button */
+.continue-btn {
+    display: inline-block;
+    color: white;
+    background-color:  rgb(209, 31, 57);
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.continue-btn:hover {
+    color: black;
+    background-color: rgb(217, 212, 212);
+}

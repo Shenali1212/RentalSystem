@@ -1,0 +1,102 @@
+ /* Announcement Container Styling */
+.announcement-container {
+    margin: 120px auto; /* Increased margin for spacing */
+    max-width: 700px;
+    padding: 30px;
+    background: linear-gradient(145deg, #ffffff, #f3f3f3); /* Subtle light gradient */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Softer, wider shadow for modern look */
+    transition: transform 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+.announcement-container:hover {
+    transform: translateY(-10px); /* Lift-up effect on hover */
+}
+
+.announcement-container h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #444; /* Softer dark color */
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.announcement-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 20px;
+    color: #555; /* Modern soft dark color */
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Modern Input Styles */
+.announcement-form input[type="text"],
+.announcement-form textarea,
+.announcement-form input[type="date"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9; /* Clean light background */
+    border: 2px solid #ddd; /* Lighter border */
+    color: #333;
+    border-radius: 10px;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle inner shadow for depth */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth focus transition */
+}
+
+.announcement-form input:focus,
+.announcement-form textarea:focus {
+    border-color: #4A90E2; /* Bright blue focus color */
+    box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3); /* Glow effect on focus */
+    outline: none;
+}
+
+.announcement-form textarea {
+    height: 180px;
+    resize: vertical; /* Allow resizing vertically */
+    padding: 15px;
+}
+
+/* Modern Button Styles */
+.announcement-form .btn-submit {
+    width: 100%;
+    background-color: #4A90E2; /* Blue color for the button */
+    color: white;
+    padding: 15px;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.announcement-form .btn-submit:hover {
+    background-color: #50C878; /* Greenish hover color */
+    transform: translateY(-2px); /* Lift on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Shadow effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .announcement-container {
+        padding: 20px;
+        margin: 80px auto;
+    }
+    .announcement-form input[type="text"],
+    .announcement-form textarea,
+    .announcement-form input[type="date"] {
+        font-size: 16px;
+        padding: 12px;
+    }
+    .announcement-form .btn-submit {
+        font-size: 1.1em;
+        padding: 12px;
+    }
+}
+ 

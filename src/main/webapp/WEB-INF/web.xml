@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+	<servlet>
+		<servlet-name>login</servlet-name>
+		<servlet-class>com.reguser.loginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>login</servlet-name>
+		<url-pattern>/log</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UsersignUp</servlet-name>
+		<servlet-class>com.reguser.UserInsert</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UsersignUp</servlet-name>
+		<url-pattern>/signup</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>addVehicle</servlet-name>
+		<servlet-class>regVehicle.AddVehicle</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addVehicle</servlet-name>
+		<url-pattern>/RentVehicle.jsp/addVehicle</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>displayVehicle</servlet-name>
+		<servlet-class>regVehicle.DisplayVehicle</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>displayVehicle</servlet-name>
+		<url-pattern>/RentVehicle.jsp/displayVehicle</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateVehicle</servlet-name>
+		<servlet-class>regVehicle.updateVehicleServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateVehicle</servlet-name>
+		<url-pattern>/RentVehicle.jsp/updateV</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteVehicle</servlet-name>
+		<servlet-class>regVehicle.deleteVehicleServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteVehicle</servlet-name>
+		<url-pattern>/RentVehicle.jsp/deleteV</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateUser</servlet-name>
+		<servlet-class>com.reguser.EditUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateUser</servlet-name>
+		<url-pattern>/updateU</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteUser</servlet-name>
+		<servlet-class>com.reguser.DeleteUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteUser</servlet-name>
+		<url-pattern>/deleteU</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddVehciletoSystem</servlet-name>
+		<servlet-class>com.admin.AddVehicletoSystemServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddVehciletoSystem</servlet-name>
+		<url-pattern>/admin.jsp/addSysVeh</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteSystemVehicle</servlet-name>
+		<servlet-class>com.admin.DeleteSystemVehicleServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteSystemVehicle</servlet-name>
+		<url-pattern>/admin.jsp/deleteSysVe</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SetAvailability</servlet-name>
+		<servlet-class>com.admin.SetAvailabilityServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SetAvailability</servlet-name>
+		<url-pattern>/setAvailability</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!--<servlet>
+		<servlet-name>OwnersignUp</servlet-name>
+		<servlet-class>com.regowner.OwnerInsert</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>OwnersignUp</servlet-name>
+		<url-pattern>/Osignup</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateOwner</servlet-name>
+		<servlet-class>com.regOwner.EditOwnerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateOwner</servlet-name>
+		<url-pattern>/updateO</url-pattern>
+	</servlet-mapping>	
+	
+	<servlet>
+		<servlet-name>deleteOwner</servlet-name>
+		<servlet-class>com.regOwner.DeleteOwnerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteOwner</servlet-name>
+		<url-pattern>/deleteO</url-pattern>
+	</servlet-mapping>-->
+	
+	<servlet>
+		<servlet-name>InsertInquiry</servlet-name>
+		<servlet-class>contactUs.InsertInquiryServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InsertInquiry</servlet-name>
+		<url-pattern>/ContactUs.jsp/insert</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ReadInquiry</servlet-name>
+		<servlet-class>contactUs.ReadInquiryServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReadInquiry</servlet-name>
+		<url-pattern>/read</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateInuiry</servlet-name>
+		<servlet-class>contactUs.UpdateInquiryServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateInuiry</servlet-name>
+		<url-pattern>/ContactUs.jsp/update</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteInquiry</servlet-name>
+		<servlet-class>contactUs.DeleteInquiryServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteInquiry</servlet-name>
+		<url-pattern>/ContactUs.jsp/delete</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>rentDetailServlet</servlet-name>
+		<servlet-class>rent.rentDetailServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>rentDetailServlet</servlet-name>
+		<url-pattern>/VehicleNRates.jsp/reserve</url-pattern>
+	</servlet-mapping>
+	
+	<!--<servlet>
+		<servlet-name>availbleVehicleServlet</servlet-name>
+		<servlet-class>rent.availbleVehicleServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>availbleVehicleServlet</servlet-name>
+		<url-pattern>/search</url-pattern>
+	</servlet-mapping>-->
+	
+	<!--<servlet>
+		<servlet-name>DispalyReservationServlet</servlet-name>
+		<servlet-class>rent.DispalyReservationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DispalyReservationServlet</servlet-name>
+		<url-pattern>/find</url-pattern>
+	</servlet-mapping>-->
+	
+	<!--<servlet>
+    	<servlet-name>DisplayReservationServlet</servlet-name>
+    	<servlet-class>rent.DisplayReservationServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+    	<servlet-name>DisplayReservationServlet</servlet-name>
+    	<url-pattern>/DisplayReservationServlet</url-pattern>
+	</servlet-mapping>-->
+	
+	<servlet>
+		<servlet-name>UpdateRentalServlet</servlet-name>
+		<servlet-class>rent.UpdateRentalServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateRentalServlet</servlet-name>
+		<url-pattern>/VehicleNRates.jsp/update</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteRecordServlet</servlet-name>
+		<servlet-class>rent.DeleteRecordServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteRecordServlet</servlet-name>
+		<url-pattern>/VehicleNRates.jsp/delete</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminDisplayReservationServlet</servlet-name>
+		<servlet-class>rent.AdminDisplayReservationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminDisplayReservationServlet</servlet-name>
+		<url-pattern>/Goadmin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>CheckEmailExistsServlet</servlet-name>
+    	<servlet-class>com.reguser.CheckEmailExistsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    	<servlet-name>CheckEmailExistsServlet</servlet-name>
+    	<url-pattern>/CheckEmailExists</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+    	<servlet-name>CheckUsernameExistsServlet</servlet-name>
+    	<servlet-class>com.reguser.CheckUsernameExistsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    	<servlet-name>CheckUsernameExistsServlet</servlet-name>
+    	<url-pattern>/CheckUsernameExists</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>insertannounce</servlet-name>
+		<servlet-class>announcement.insertAnnounceServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>insertannounce</servlet-name>
+		<url-pattern>/Announcement.jsp/insertAnn</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>displayannounce</servlet-name>
+		<servlet-class>announcement.annServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>displayannounce</servlet-name>
+		<url-pattern>/Announcement.jsp/display</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>announceUpdate</servlet-name>
+		<servlet-class>announcement.UpdateAnnouceServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>announceUpdate</servlet-name>
+		<url-pattern>/Announcement.jsp/updateAnnouncement</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteAnnouce</servlet-name>
+		<servlet-class>announcement.DeleteAnnounceServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteAnnouce</servlet-name>
+		<url-pattern>/Announcement.jsp/deleteAnn</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>displayannouncepage</servlet-name>
+		<servlet-class>announcement.announcePageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>displayannouncepage</servlet-name>
+		<url-pattern>/Announcement.jsp/displaypage</url-pattern>
+	</servlet-mapping>
+	
+</web-app>

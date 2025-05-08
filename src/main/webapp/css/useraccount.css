@@ -1,0 +1,69 @@
+user-account-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.user-account-container h2 {
+	margin-top: 20px;
+    font-size: 36px;
+    color: #333;
+   
+    margin-top:60px;
+}
+
+/* User Information Table */
+.user-info-table {
+    width: 75%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left:12%;
+
+    text-align: left;
+}
+
+.user-info-table th, .user-info-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.user-info-table th {
+    /*background-color: #007bff;*/
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.user-info-table td {
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+}
+
+.action-buttons {
+    margin-top: 20px;
+    text-align: center;
+    text-decoration:none;
+}
+
+.btn {
+	background-color:  rgb(209, 31, 57);
+    transition: background-color 0.3s ease;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px ;
+    font-size: 16px;
+    border: none;
+    border-radius: 5;
+    margin-bottom : 20px;
+    text-decoration:none;
+}
+
+.btn:hover {
+    color: black;
+    background-color: rgb(217, 212, 212);
+}

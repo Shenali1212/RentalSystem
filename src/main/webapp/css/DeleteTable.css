@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* Style for the table inside the form */
+.delete-table {
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.delete-table th, .delete-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.delete-table th {
+    background-color: #c0c0c0;
+    color: black;
+    font-size: 1.2em;
+}
+
+.delete-table td {
+    font-size: 1em;
+}
+
+.delete-table input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    font-size : 21px;
+}
+
+.submit-cell {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.submit-cell input[type="submit"] {
+    background-color:  rgb(209, 31, 57);
+    transition: background-color 0.3s ease;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.submit-cell input[type="submit"]:hover {
+    color: black;
+    background-color: rgb(217, 212, 212);
+}
+
+h1{
+	margin-top:60px;
+	text-align : center;
+}
